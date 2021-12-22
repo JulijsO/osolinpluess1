@@ -1,0 +1,780 @@
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd.otf");
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd-BlackEx.otf");
+    font-weight: 730;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd-Ex.otf");
+    font-weight: 530;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd-BoldCn.otf");
+    font-weight: 670;
+}
+
+/* _________________ */
+
+body{
+
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+    font-family: "Univers";
+    max-height:100%;
+    max-width:100%;
+}
+
+/* main-flex-container__________________ */
+
+.main-parent{
+    height:100vh;
+    padding:15px;
+    padding-left:30px;
+    padding-right:30px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+/* Header_______________________________ */
+
+.header-child{
+    width:inherit;
+    height: 24px;
+    /* background:seagreen; */
+    margin-bottom:15px;
+
+    display:flex;
+    /* color: white; */
+
+    border-bottom:solid 1px;
+    
+}
+
+.logo-title {
+    font-weight: 730;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color:black;
+    
+    
+    flex-basis:300px;
+    flex-grow: 2;
+
+
+
+    display: inline-block;
+    width: 60vw;
+    /* padding-left: 20px; */
+}
+
+.logo-title-add {
+    font-weight: 530;
+    font-size: 14px;
+    color:black;
+
+    padding-left:2px;
+    
+}
+
+.logo-bg{
+    /* background: black; */
+    padding:5.5px 0px 2px 0px;
+    
+
+}
+
+.logo-bg:hover{
+    cursor: pointer;
+}
+
+.logo-png{
+    height:100%
+}
+
+.header-links{
+    flex-basis:300px;
+    flex-grow: 1;
+
+    padding-top:4px;
+    padding-left:24px;
+
+    display:flex;
+}
+
+.büro {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+
+    flex-grow:1;
+    text-align: center;   
+}
+
+.kontakt {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    flex-grow:1;
+    text-align: right;
+}
+
+.projekt {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    flex-grow: 1;
+}
+
+.projekt-m {
+    display:none;
+}
+
+
+/* Projectübersicht_____________________ */
+
+.projectlist-child {
+    width:inherit;
+    height:0px;
+    background: rgb(255, 255, 255);
+    margin-bottom:24px;
+
+    display:flex;
+
+    /* padding-top: 15px; */
+    /* padding-left:20px; */
+
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(255, 255, 255);
+
+}
+.projectlist-title-container{
+    width:100%;
+    display: none;
+    margin-bottom:15px;
+    height:24px;
+}
+.list-padding{
+    width:300px;
+    flex-grow:2;
+}
+
+.projectlist{
+    width:300px;
+    flex-grow:1;
+    padding-left:24px;
+    display:flex;
+
+}
+
+.projectlist-title{
+    font-weight:670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    flex-grow:1;
+    
+
+    border-bottom:solid 1px;
+}
+
+.clickable{
+    display:inline;
+}
+
+.clickable:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.clickable-pl{
+    display: inline;
+}
+
+.clickable-pl:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+
+.closed-list{
+    display:none;
+    font-weight:530;
+    font-size:14px;
+    margin-left:20px;
+}
+
+.close-list{
+    display:inline;
+    position: absolute;
+}
+
+.close-list:hover {
+    color:blue;
+    cursor:pointer;
+}
+
+
+.triangle{
+    position:absolute;
+    height:14px;
+    margin-left:20px;
+}
+
+
+.list-container{
+    display:none;
+}
+
+/* geöffnete Projektliste______ */
+
+.list-container-on{
+    display:flex;
+}
+
+.list-padding-on{
+    /* border-bottom:solid 1px; */
+}
+
+.projectlist-title-on{
+    
+    flex-grow:1;
+    border:0;
+}
+
+.projectlist-child-on{
+    height:212px;
+    flex-direction: column;
+    padding-top:12px;
+    
+    
+}
+.projectlist-on{
+    /* border-bottom:solid 1px; */
+    
+}
+
+.list-container-on{
+    flex-grow:1;
+    border-bottom: solid 1px;
+    display:flex;
+    
+}
+
+.list-column-on{
+    flex-grow:2;
+    width:300px;
+}
+
+.list-column-on-2{
+    flex-grow: 1;
+    width:300px;
+    padding-left:24px;
+
+}
+
+.list-item{
+    font-weight:670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    display:block;
+
+    text-transform: uppercase;
+}
+
+.list-item:hover{
+    /* cursor: pointer; */
+    /* color:blue; */
+}
+
+.active-project{
+    color:blue;
+}
+
+
+/* Projektbox___________________________________ */
+
+.content-wrapper{
+    height: 200px;
+    flex-grow:1;
+
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.content-child {
+    width:inherit;
+    /* max-height:100%; */
+    /* background: rgb(139, 46, 85); */
+    flex-grow:1;
+
+    display:flex;
+    flex-wrap: wrap;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(255, 255, 255);
+    
+
+    background: white;
+
+    
+    
+}
+
+/* Bildbereich__________*/
+
+.img-section{
+    /* background: rgb(11, 177, 177); */
+    flex-basis:300px;
+    flex-grow: 2;
+    max-height:100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+    /* padding-left:20px; */
+    /* border-right: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255); */
+
+   
+   
+}
+
+.img-container{
+    /* background: magenta; */
+    /* flex-grow: 1;
+    height:80%; */
+    max-height: calc(100% - 24px);
+
+    display: flex;
+    /* flex-direction: column; */
+    /* cursor: pointer; */
+
+}
+
+
+.plan-container {
+    /* background: magenta; */
+    /* flex-grow: 1;
+    height: 80%; */
+    max-height: calc(100% - 24px);
+
+    display: none;
+    flex-direction: column;
+
+}
+/* Bild und Padding_____ */
+
+
+.img-padding-hor-cont {
+    /* background: lime; */
+    /* max-width: 100%;
+    max-height:100%;
+    display: flex; */
+    /* height:100%; */
+}
+
+.img-padding-hor{
+    /* background: rgb(0, 0, 0); */
+    flex-grow:1;
+}
+
+.img-padding-vert {
+    /* background: rgb(0, 0, 0); */
+    flex-grow: 1;
+    height:1px;
+}
+
+
+img{
+    /* object-fit:cover; */
+}
+
+
+
+/* SLIDER CSS____________________________ */
+
+#img1{
+
+}
+
+#img2 {
+    display:none;
+}
+
+#img3 {
+    display:none;
+}
+
+#img4 {
+    display:none;
+}
+
+#img5 {
+    display:none;
+}
+
+#img6 {
+    display:none;
+}
+
+
+
+#pln1 {
+
+}
+
+#pln2 {
+    display: none;
+}
+
+#pln3 {
+    display: none;
+}
+
+#pln4 {
+    display: none;
+}
+
+#pln5 {
+    display: none;
+}
+
+#pln6 {
+    display: none;
+
+}
+
+/* _______Bildunterschrift______ */
+
+#bildus1{
+
+}
+
+
+#bildus2 {
+    display: none;
+}
+
+#bildus3 {
+    display: none;
+}
+
+#bildus4 {
+    display: none;
+}
+
+#bildus5 {
+    display: none;
+}
+
+#bildus6 {
+    display: none;
+}
+
+
+#bildusP1 {
+
+}
+
+
+#bildusP2 {
+    display: none;
+}
+
+#bildusP3 {
+    display: none;
+}
+
+#bildusP4 {
+    display: none;
+}
+
+#bildusP5 {
+    display: none;
+}
+
+#bildusP6 {
+    display: none;
+}
+
+
+
+
+/* .slide{
+    display:none;
+} */
+
+/* Bildunterschrift______________ */
+
+.bildus-area {
+    /* background:rgb(71, 5, 194); */
+    
+    display: flex;
+    height: 24px;
+    min-height: 24px;
+
+    border-top: solid;
+    border-width: 1px;
+    border-color: white;
+
+    font-weight: 550;
+    font-size: 14px;
+    text-align: right;
+}
+
+.bildus, .bildusP {
+    padding-top: 6px;
+
+}
+
+/* Buttons_________ */
+
+.buttons-area {
+    /* background:rgb(71, 5, 194); */
+    flex-grow:1;
+    display:flex;
+    height: 24px;
+    min-height:24px;
+
+    border-top: solid;
+    border-width: 1px;
+    border-color:white;
+
+    font-weight: 630;
+    font-size: 14px;
+    letter-spacing: 0.1em;  
+}
+
+.buttons{
+    flex-grow:1;
+    padding-top:14px;
+    text-align:left;
+    /* padding-left: 10px; */
+}
+
+
+#img-btn{
+    border-bottom: solid 1px;
+}
+
+.button-name:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+
+.slider-arrows{
+    width:50px;
+    display:flex;
+}
+
+
+#pln-arrows{
+    display:none;
+}
+
+.arrow{
+    flex-grow:1;
+    text-align:center;
+    padding-top:10px;
+    font-weight:530;
+    font-size:18px;
+}
+
+
+.ar-right:hover{
+        color:blue;
+        cursor: pointer;
+}
+
+.ar-left:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+/* Textbereich_____________________________ */
+.info-section{
+    /* background: rgb(6, 158, 100);   */
+    max-height:100%;
+    flex-grow:1; 
+    flex-basis:300px;
+    overflow:scroll;
+
+    font-weight: 550;
+
+    padding:2px 0px 20px 24px;
+    
+}
+
+.project-header{
+    display:flex;
+}
+.pr-number{
+    width:50px;
+    min-width:50px;
+}
+
+.nr{
+    
+    font-size: 24px;
+    
+    padding-right:6px;
+
+}
+
+.project-info{
+    flex-grow:1;
+}
+
+.project-title{
+    /* margin-bottom:16px; */
+    font-weight: 670;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    line-height:24px;
+    text-transform: uppercase;
+}
+
+.add-project-info{
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.project-description{
+    
+    text-indent:50px;
+    font-size:14px;
+}
+
+/*  padding_______________ */
+.padding-child{
+    height: 18px;
+}
+.padding-child {
+    height: 12px;
+}
+
+
+
+
+
+/* ___________________SMALL DEVICES_____________________________ */
+
+@media screen and (max-width: 640px) {
+
+    .header-child{
+        display: unset;
+        height: 96px;
+    }
+
+    .logo-title{
+        flex-basis: unset;
+        flex-grow: unset;
+        width: 100vw;
+
+        font-size: 16px;
+        border-bottom: solid 1px;
+    }
+
+    .logo-title-add {
+        font-size: 10px;
+    }
+
+    .header-links {
+        display:block;
+        padding-left: 0px;
+        padding-top:12px;
+
+  
+    }
+
+    .projekt {
+        display: none;
+    }
+    
+    .projekt-m, .büro, .kontakt {
+        display:block;
+        text-align: left;
+        font-weight: 670;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+
+        padding-bottom:4px;
+    }
+
+
+    /* Projektliste */
+
+    .projectlist-child{
+        margin-bottom:0;
+    }
+
+    .projectlist-child-on{
+        padding-top:0;
+    }
+
+    .list-container-on{
+        display:unset;
+        overflow-y: scroll;
+        
+    }
+
+    .list-column-on, .list-column-on-2 {
+        display:block;
+        width:unset;
+        padding-left:0;
+    }
+
+    /* __________img-section________________ */
+
+    .content-wrapper{
+        flex-grow:1;
+        /* overflow-x: scroll; */
+    }
+
+    .content-child{
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+
+    .img-section{
+        height:300px;
+        margin-bottom:20px;
+    }
+
+    .img-container{
+
+    }
+
+    .info-section{
+        padding:unset;
+        padding-top: 10px;
+    }
+
+}

@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "Univers";
+    src: url("/public/fonts/UniversLTStd/UniversLTStd.otf");
+
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("/public/fonts/UniversLTStd/UniversLTStd-BlackEx.otf");
+    font-weight: 730;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("/public/fonts/UniversLTStd/UniversLTStd-Ex.otf");
+    font-weight: 530;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("/public/fonts/UniversLTStd/UniversLTStd-BoldCn.otf");
+    font-weight: 670;
+}
+
+/* _________________ */
+
+body{
+    /* background: rgb(248, 221, 221); */
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+    font-family: "Univers";
+}
+
+/* main-flex-container__________________ */
+
+.main-parent{
+    height:100vh;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+/* Header_______________________________ */
+
+.header-child{
+    width:inherit;
+    height:30px;
+    /* background:seagreen; */
+    margin-bottom:40px;
+    margin-bottom:40px;
+
+    display:flex;
+    /* color: white; */
+}
+
+.logo-title {
+    font-weight: 730;
+    font-size: 20px;
+    letter-spacing: -0.06em;
+    
+    flex-basis:300px;
+    flex-grow: 2;
+
+
+
+    display: inline-block;
+    width: 60vw;
+    padding-left: 10px;
+}
+
+.logo-title-add {
+    font-weight: 530;
+    font-size: 14px;
+}
+
+.header-links{
+    flex-basis:300px;
+    flex-grow: 1;
+}
+
+.büro {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+
+    display: inline-block;
+    width: 20vw;
+
+    
+}
+
+.kontakt {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    
+}
+
+
+/* Projectübersicht_____________________ */
+
+.projectlist-child {
+    width:inherit;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    margin-bottom:20px;
+
+    padding-top: 15px;
+    padding-left:10px;
+
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(0, 0, 0);
+
+    
+    
+
+    
+}
+
+.projectlist-title{
+    font-weight:670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+
+/* Projektbox___________________________________ */
+
+.content-child {
+    width:inherit;
+    height: 200px;
+    /* background: rgb(139, 46, 85); */
+    flex-grow:1;
+
+    display:flex;
+    flex-wrap: wrap;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(0, 0, 0);
+    
+
+    background: white;
+
+    
+    
+}
+
+/* Bildbereich__________*/
+
+.img-section{
+    /* background: rgb(11, 177, 177); */
+    flex-basis:300px;
+    flex-grow: 2;
+    max-height:100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+    /* padding-left:15px; */
+    border-right: solid;
+    border-width: 1px;
+
+   
+   
+}
+
+.img-container{
+    /* background: magenta; */
+    flex-grow: 1;
+    height:80%;
+
+    display: flex;
+    flex-direction: column;
+
+    
+    
+
+}
+
+/* Bild und Padding_____ */
+
+.img-padding-hor-cont {
+    /* background: lime; */
+    max-width: 100%;
+    max-height:100%;
+    display: flex;
+}
+
+.img-padding-hor{
+    /* background: rgb(0, 0, 0); */
+    flex-grow:1;
+}
+
+.img-padding-vert {
+    /* background: rgb(0, 0, 0); */
+    flex-grow: 1;
+}
+
+img{
+    background: maroon;
+    max-width:100%;   
+
+    /* border-style: solid;
+    border-width: 0px 1px 0px 0px; */
+}
+
+/* .slide{
+    display:none;
+} */
+
+/* Buttons_________ */
+
+.buttons-area {
+    /* background:rgb(71, 5, 194); */
+    /* flex-grow:1; */
+    display:flex;
+    height: 40px;
+    min-height:40px;
+
+    border-top: solid;
+    border-width: 1px;
+
+    font-weight: 630;
+    font-size: 14px;
+    letter-spacing: 0.1em;  
+}
+
+.buttons{
+    flex-grow:1;
+    padding-top:10px;
+    text-align:left;
+    padding-left: 10px;
+}
+
+.pläne{
+    border-left: solid;
+    border-width: 1px;
+    /* background: palevioletred; */
+}
+
+/* Textbereich_____________________________ */
+.info-section{
+    /* background: rgb(6, 158, 100);   */
+    max-height:100%;
+    flex-grow:1; 
+    flex-basis:300px;
+    overflow:scroll;
+
+    font-weight: 550;
+
+    padding:20px;
+    padding-left:26px;
+}
+
+.project-header{
+    display:flex;
+}
+.pr-number{
+    width:50px;
+    min-width:50px;
+}
+
+.nr{
+    
+    font-size: 24px;
+    
+    padding-right:6px;
+
+}
+
+.project-info{
+    flex-grow:1;
+}
+
+.project-title{
+    /* margin-bottom:16px; */
+    font-weight: 670;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    line-height:24px;
+}
+
+.add-project-info{
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.project-description{
+    
+    text-indent:50px;
+    font-size:14px;
+}
