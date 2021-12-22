@@ -1,0 +1,586 @@
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd.otf");
+    font-weight: 550;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd-BlackEx.otf");
+    font-weight: 730;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd-Ex.otf");
+    font-weight: 530;
+}
+
+@font-face {
+    font-family: "Univers";
+    src: url("../UniversLTStd/UniversLTStd-BoldCn.otf");
+    font-weight: 670;
+}
+
+/* ______________________________________________________________ */
+
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+    font-family: "Univers";
+    max-height:100%;
+    max-width:100%;
+}
+
+/* main-flex-container__________________ */
+
+.main-parent{
+    height:100vh;
+    padding:15px;
+    padding-left:30px;
+    padding-right:30px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+/* Header_______________________________ */
+
+.header-child{
+    width:inherit;
+    height: 24px;
+    margin-bottom:15px;
+    display:flex;
+    border-bottom:solid 1px;
+}
+
+.logo-title {
+    font-weight: 730;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color:black;
+    flex-basis:300px;
+    flex-grow: 2;
+    display: inline-block;
+    width: 60vw;
+}
+
+.logo-title-add {
+    font-weight: 530;
+    font-size: 14px;
+    color:black;
+    padding-left:2px;
+}
+
+.logo-bg{
+    padding:5.5px 0px 2px 0px;
+}
+
+.logo-bg:hover{
+    cursor: pointer;
+}
+
+
+.header-links{
+    flex-basis:300px;
+    flex-grow: 1;
+    padding-top:4px;
+    padding-left:24px;
+    display:flex;
+}
+
+.büro {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    flex-grow:1;
+    text-align: center;   
+}
+
+.kontakt {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    flex-grow:1;
+    text-align: right;
+}
+
+.projekt {
+    font-weight: 670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    flex-grow: 1;
+}
+
+.projekt-m {
+    display:none;
+}
+
+
+/* Projectübersicht_____________________ */
+
+.projectlist-child {
+    width:inherit;
+    height:0px;
+    background: rgb(255, 255, 255);
+    margin-bottom:24px;
+    display:flex;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgb(255, 255, 255);
+}
+
+.projectlist-title-container{
+    width:100%;
+    display: none;
+    margin-bottom:15px;
+    height:24px;
+}
+
+.list-padding{
+    width:300px;
+    flex-grow:2;
+}
+
+.projectlist{
+    width:300px;
+    flex-grow:1;
+    padding-left:24px;
+    display:flex;
+}
+
+.projectlist-title{
+    font-weight:670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    flex-grow:1;
+    border-bottom:solid 1px;
+}
+
+.clickable{
+    display:inline;
+}
+
+.clickable:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.clickable-pl{
+    display: inline;
+}
+
+.clickable-pl:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+
+.closed-list{
+    display:none;
+    font-weight:530;
+    font-size:12px;
+    margin-left:10px;
+}
+
+.close-list{
+    display:inline;
+    position: absolute;
+}
+
+.close-list:hover {
+    color:blue;
+    cursor:pointer;
+}
+
+
+.triangle{
+    position:absolute;
+    display:inline;
+    font-size:12px;
+    font-weight:530;
+    height:14px;
+    margin-left:10px;
+}
+
+.triangle:hover {
+    color:blue;
+}
+
+
+.list-container{
+    display:none;
+}
+
+/* geöffnete Projektliste______ */
+
+.list-container-on{
+    display:flex;
+}
+
+.projectlist-title-on{
+    flex-grow:1;
+    border:0;
+}
+
+.projectlist-child-on{
+    height:212px;
+    flex-direction: column;
+    padding-top:12px;
+}
+
+.list-container-on{
+    flex-grow:1;
+    border-bottom: solid 1px;
+    display:flex;
+}
+
+.list-column-on{
+    flex-grow:2;
+    width:300px;
+}
+
+.list-column-on-2{
+    flex-grow: 1;
+    width:300px;
+    padding-left:24px;
+}
+
+.list-item{
+    font-weight:670;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    display:block;
+    text-transform: uppercase;
+}
+
+.active-project{
+    color:blue;
+}
+
+
+/* Projektbox___________________________________ */
+
+.content-wrapper{
+    height: 200px;
+    flex-grow:1;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.content-child {
+    width:inherit;
+    flex-grow:1;
+    display:flex;
+    flex-wrap: wrap;
+    border-color: rgb(255, 255, 255);
+}
+
+/* Bildbereich__________*/
+
+.img-section{
+    flex-basis:300px;
+    flex-grow: 2;
+    max-height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.img-container{
+    max-height: calc(100% - 24px);
+    display: flex;
+}
+
+
+.plan-container {
+    max-height: calc(100% - 24px);
+    display: none;
+}
+
+
+/* SLIDER CSS_______________________________________________ */
+/* _____max Bildanzahl an Klassen vorhanden___ */
+#img1{
+
+}
+
+#img2 {
+    display:none;
+}
+
+#img3 {
+    display:none;
+}
+
+#img4 {
+    display:none;
+}
+
+#img5 {
+    display:none;
+}
+
+#img6 {
+    display:none;
+}
+
+
+/* _____max Plananzahl an Klassen vorhanden___ */
+
+#pln1 {
+
+}
+
+#pln2 {
+    display: none;
+}
+
+#pln3 {
+    display: none;
+}
+
+#pln4 {
+    display: none;
+}
+
+#pln5 {
+    display: none;
+}
+
+#pln6 {
+    display: none;
+}
+/* ____________________________________________________________________ */
+
+/* Buttons_________ */
+
+.buttons-area {
+    flex-grow:1;
+    display:flex;
+    /* height: 24px; */
+    min-height:24px;
+    font-weight: 630;
+    font-size: 14px;
+    letter-spacing: 0.1em;  
+}
+
+.buttons{
+    flex-grow:1;
+    padding-top:14px;
+    text-align:left;
+}
+
+
+#img-btn{
+    border-bottom: solid 1px;
+}
+
+.button-name:hover{
+    color:blue;
+    cursor: pointer;
+}
+
+.slider-arrows{
+    width:50px;
+    display:flex;
+}
+
+#pln-arrows{
+    display:none;
+}
+
+.arrow{
+    flex-grow:1;
+    text-align:center;
+    padding-top:10px;
+    font-weight:530;
+    font-size:18px;
+}
+
+.ar-right:hover{
+        color:blue;
+        cursor: pointer;
+}
+
+.ar-left:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+/* Textbereich_____________________________ */
+.info-section{
+    max-height:100%;
+    flex-grow:1; 
+    flex-basis:300px;
+    overflow:scroll;
+    font-weight: 550;
+    padding:2px 0px 20px 24px;
+}
+
+.project-header{
+    display:flex;
+}
+
+.pr-number{
+    width:50px;
+    min-width:50px;
+}
+
+.nr{
+    font-size: 24px;
+    padding-right:6px;
+}
+
+.project-info{
+    flex-grow:1;
+}
+
+.project-title{
+    font-weight: 670;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    line-height:24px;
+    text-transform: uppercase;
+}
+
+.add-project-info{
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.project-description{
+    text-indent:50px;
+    font-size:14px;
+}
+
+.credits-area{
+    padding-left:0px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.credits-title{
+    font-weight: 670;
+    font-size:14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.credits{
+    font-size:14px;
+}
+
+/*  padding_______________ */
+
+.padding-child{
+    height: 18px;
+}
+.padding-child {
+    height: 12px;
+}
+
+
+
+
+
+/* ___________________SMALL DEVICES_____________________________ */
+
+@media screen and (max-width: 640px) {
+
+    .header-child{
+        display: unset;
+        height: 96px;
+    }
+
+    .logo-title{
+        flex-basis: unset;
+        flex-grow: unset;
+        width: 100vw;
+
+        font-size: 16px;
+        border-bottom: solid 1px;
+    }
+
+    .logo-title-add {
+        font-size: 10px;
+    }
+
+    .header-links {
+        display:block;
+        padding-left: 0px;
+        padding-top:12px;
+
+  
+    }
+
+    .projekt {
+        display: none;
+    }
+    
+    .projekt-m, .büro, .kontakt {
+        display:block;
+        text-align: left;
+        font-weight: 670;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+
+        padding-bottom:4px;
+    }
+
+
+    /* Projektliste________________________________ */
+
+    .projectlist-child{
+        margin-bottom:0;
+    }
+
+    .projectlist-child-on{
+        padding-top:0;
+    }
+
+    .list-container-on{
+        display:unset;
+        overflow-y: scroll;
+        
+    }
+
+    .list-column-on, .list-column-on-2 {
+        display:block;
+        width:unset;
+        padding-left:0;
+    }
+
+    /* __________img-section________________ */
+
+    .content-wrapper{
+    }
+
+    .content-child{
+        flex-direction: column;
+        flex-wrap: unset;
+        overflow-y: scroll;
+    }
+
+    .img-section{
+        margin-bottom:20px;
+        flex-grow:unset;
+        flex-basis:unset;
+    }
+
+    .info-section{
+        padding:unset;
+        padding-top: 10px;
+        overflow:unset;
+    }
+
+}
